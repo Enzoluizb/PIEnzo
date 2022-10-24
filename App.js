@@ -1,13 +1,27 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
 
-export function HomeScreen(){
+export function HomeScreen({navigation}) {
+  const irParaSobre = () => {
+    return navigation.navigate("Sobre");
+  }
   return (
     <View style={styles.container}>
       <Text>Olá mundo!</Text>
+      <Button title="Ir para Sobre" 
+      onPress={()=> navigation.navigate("Sobre")}
+      />
     </View>
   )
+}
+
+function SobreScreen() {
+  return (
+    <View>
+      <Text>Sobre o app</Text>
+    </View>
+  );
 }
 
 const Stack = createNativeStackNavigator();
@@ -15,7 +29,8 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-      <Stack.Screen name={"Home"} component={HomeScreen}/>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Sobre" component={SobreScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
