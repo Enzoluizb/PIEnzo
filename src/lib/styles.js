@@ -10,4 +10,19 @@ export const style = StyleSheet.create({
         fontSize: "30px",
         fontWeight: "bold"
     },
+    containerContato: {
+        flex: 1,
+        alignItems: 'center'
+    },
+    espaco: {
+        margin: 20
+    },
+    inputs: {
+        margin: 10,
+        width: 350
+    },
+    tituloContato: {
+        fontSize: 20,
+        marginTop: 5
+    },
 });
