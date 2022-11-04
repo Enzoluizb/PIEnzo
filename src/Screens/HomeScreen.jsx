@@ -9,7 +9,7 @@ export const HomeScreen = ({ navigation }) => {
         style={{
           fontSize: 30,
           marginBottom: "100px",
-          color: "blue",
+          color: "#f7c49c",
           fontWeight: "bold",
         }}
       >
@@ -17,7 +17,7 @@ export const HomeScreen = ({ navigation }) => {
       </Text>
       <Button
         mode="contained"
-        style={{ width: "50%", marginBottom: "20px", backgroundColor: "blue" }}
+        style={{ width: "50%", marginBottom: "20px", backgroundColor: "#f7c49c" }}
         onPress={() => navigation.navigate("Sobre")}
       >
         Sobre
@@ -25,7 +25,7 @@ export const HomeScreen = ({ navigation }) => {
       
       <Button
         mode="contained"
-        style={{ width: "50%", marginBottom: "40px", backgroundColor: "blue" }}
+        style={{ width: "50%", marginBottom: "40px", backgroundColor: "#f7c49c"}}
         onPress={() => navigation.navigate("Contato")}
       >
         Contato 

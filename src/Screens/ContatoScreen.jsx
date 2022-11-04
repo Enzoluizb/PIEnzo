@@ -17,7 +17,7 @@ export const ContatoScreen = () => {
         style={{
           fontSize: 30,
           marginBottom: "100px",
-          color: "blue",
+          color: "#f7c49c",
           fontWeight: "bold",
         }}
       >
@@ -41,16 +41,22 @@ export const ContatoScreen = () => {
         value={text}
         onChangeText={(text) => setText(text)}
       />
-      <RadioButton
-        value="first"
-        status={checked === "first" ? "checked" : "unchecked"}
-        onPress={() => setChecked("first")}
-      />
-      <RadioButton
-        value="second"
-        status={checked === "second" ? "checked" : "unchecked"}
-        onPress={() => setChecked("second")}
-      />
+      <View style={style.radios}>
+        <RadioButton
+          value="first"
+          status={checked === "first" ? "checked" : "unchecked"}
+          onPress={() => setChecked("first")}
+        />
+        <Text>1</Text>
+      </View>
+      <View style={style.radios}>
+        <RadioButton
+          value="second"
+          status={checked === "second" ? "checked" : "unchecked"}
+          onPress={() => setChecked("second")}
+        />
+        <Text>2</Text>
+      </View>
       <Switch value={isSwitchOn} onValueChange={onToggleSwitch} />
     </View>
   );

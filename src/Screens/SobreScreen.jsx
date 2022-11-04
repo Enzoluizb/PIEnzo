@@ -8,7 +8,7 @@ export const SobreScreen = () => {
         style={{
           fontSize: 30,
           marginBottom: "100px",
-          color: "blue",
+          color: "#f7c49c",
           fontWeight: "bold",
         }}
       >
