@@ -4,25 +4,27 @@ export const style = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
-    },
-    h1 : {
-        fontSize: "30px",
-        fontWeight: "bold"
-    },
+        alignItems: 'center',
+        backgroundColor: 'lightblue'
+    }, 
     containerContato: {
         flex: 1,
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: 'lightblue'
+    },
+    containerSobre: {
+        flex: 1,
+        alignItems: 'center',
+        backgroundColor: 'lightblue'
     },
     espaco: {
-        margin: 20
+        margin: 10
     },
     inputs: {
         margin: 10,
         width: 350
     },
-    tituloContato: {
-        fontSize: 20,
-        marginTop: 5
-    },
+    botaohome: {
+        margin: 10
+    }
 });
