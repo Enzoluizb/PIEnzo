@@ -5,17 +5,17 @@ export const style = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#654645'
+        backgroundColor: 'lightblue'
     }, 
     containerContato: {
         flex: 1,
         alignItems: 'center',
-        backgroundColor: '#654645'
+        backgroundColor: 'lightblue'
     },
     containerSobre: {
         flex: 1,
         alignItems: 'center',
-        backgroundColor: '#654645'
+        backgroundColor: 'lightblue'
     },
     espaco: {
         margin: 10
@@ -32,5 +32,16 @@ export const style = StyleSheet.create({
         justifyContent: "center",
         flexDirection: 'row',
         alignItems: 'center'
+    },
+    nightmode: {
+        display: 1,
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 10
+    },
+    pairadio: {
+        display: 1,
+        flexDirection: "row",
+        alignItems: "center"
     }
 });

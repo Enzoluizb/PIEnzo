@@ -8,8 +8,9 @@ export const SobreScreen = () => {
         style={{
           fontSize: 30,
           marginBottom: "100px",
-          color: "#f7c49c",
-          fontWeight: "bold",
+          color: "black",
+          fontWeight: "200",
+          letterSpacing: 4
         }}
       >
         Sobre
